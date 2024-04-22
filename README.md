@@ -35,6 +35,9 @@ ls -lah
 tar -cvf /ruta/del/archivo/wp_modFECHA.tar.gz www
 ```
 
+![sudo su](sudo-su-2.png)
+
+
 ## II. Hacer Respaldo de Base de Datos:
 
 ```
@@ -71,6 +74,9 @@ mv www/html www/
 
 4. Asegúrese de que todos los archivos estén dentro de la carpeta 'www'.
 
+![www-html](www-html.png)
+
+
 ## IV. Montar Página Web Estática
 
 1. Elimine la carpeta 'www' para evitar mezclar carpetas:
@@ -96,6 +102,8 @@ tar -xvf ss_modFECHA.tar.gz
 ```
 rm -r ss_modFECHA.tar.gz
 ```
+
+![Inicio GIL](inicio-gil.png)
 
 ## V. Verificación y Restauración
 
