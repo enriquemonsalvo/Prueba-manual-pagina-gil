@@ -52,6 +52,8 @@ UNAM_GILL
 
 Una vez realizados los cambios y respaldados, utilice el plugin Simply Static en el editor de WordPress en localhost para generar una página estática. Puede seguir el siguiente tutorial: [Convert WordPress Websites into Static Sites with Simply Static](https://www.youtube.com/watch?v=a4xG14NsQUI)
 
+[![Simply Static](yt-simplystatic-image.jpg)](https://www.youtube.com/watch?v=a4xG14NsQUI)
+
 1. Descomprima el archivo zip de Simply Static y déle el formato adecuado ss_modFECHA.tar.gz.
 
 2. En una terminal secundaria, cree una carpeta 'www' en el mismo directorio de Simply Static y dentro de ella cree una carpeta 'html':
