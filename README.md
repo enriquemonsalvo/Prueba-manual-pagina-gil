@@ -35,10 +35,12 @@ tar -cvf /ruta/del/archivo/wp_modFECHA.tar.gz www
 ## II. Hacer Respaldo de Base de Datos:
 
 ```
-mysqldump -uUNAM_GILL -p BASEDEDATOS > nombredelacopiadeseguridad.sql
+mysqldump -uUSUARIO_BASEDEDATOS -p BASEDEDATOS > nombredelacopiadeseguridad.sql
 ```
 
 Ingrese la contraseña cuando se solicite.
+Para esta versión tanto la contraseña como el usuario es
+UNAM_GILL
 
 ## III. Crear Página Estática
 
