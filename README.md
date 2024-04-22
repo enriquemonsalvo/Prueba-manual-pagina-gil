@@ -105,28 +105,28 @@ Después de montar la página estática, verifique su funcionamiento en localhos
 
     Para restaurar una versión anterior de WordPress, siga estos pasos:
 
-    - Ubique el archivo tar.gz correspondiente a la versión que desea restaurar (por ejemplo, 'wp_modFECHA.tar.gz').
+   Ubique el archivo tar.gz correspondiente a la versión que desea restaurar (por ejemplo, 'wp_modFECHA.tar.gz').
 
-    - Borre la carpeta 'www' actual:
+   Borre la carpeta 'www' actual:
 
     ```
     rm -r www
     ```
 
-    - Copie el archivo tar.gz al directorio actual y verifique su presencia:
+2. Copie el archivo tar.gz al directorio actual y verifique su presencia:
 
     ```
     cp ruta/del/archivo/wp_modFECHA.tar.gz .
     ls -lah
     ```
 
-    - Descomprima el archivo tar.gz:
+3. Descomprima el archivo tar.gz:
 
     ```
     tar -xvf wp_modFECHA.tar.gz
     ```
 
-    - Asegúrese de que los permisos sean correctos:
+4. Asegúrese de que los permisos sean correctos:
 
     ```
     chown -R www-data:www-data www
@@ -134,7 +134,7 @@ Después de montar la página estática, verifique su funcionamiento en localhos
 
 ### Notas
 
-- Formato para archivos tar:
+Formato para archivos tar:
   - Para WordPress: 'wp_modFECHA.tar.gz'
   - Para Estática: 'ss_modFECHA.tar.gz'
   - Para bases de datos de WordPress: 'wp_db_modFECHA.sql'
