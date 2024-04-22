@@ -39,8 +39,11 @@ mysqldump -uUSUARIO_BASEDEDATOS -p BASEDEDATOS > nombredelacopiadeseguridad.sql
 ```
 
 Ingrese la contraseña cuando se solicite.
-Para esta versión tanto la contraseña como el usuario es
+Para esta versión tanto la contraseña como el usuario es UNAM_GILL
+
+```
 UNAM_GILL
+```
 
 ## III. Crear Página Estática
 
