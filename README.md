@@ -1,5 +1,8 @@
 # Manual de Editor página web GIL
 
+![Banner GIL Negro](/GIL%20BANNER%20NEGRO.png)
+
+
 Este manual está diseñado para facilitar el proceso de edición y mantenimiento de un sitio web WordPress y una página estática en un entorno de desarrollo local utilizando el plugin Simply Static. Este manual está destinado a ser utilizado en un entorno basado en Linux.
 
 Antes de realizar cualquier cambio en WordPress, es fundamental realizar copias de seguridad tanto del sitio web como de la base de datos.
