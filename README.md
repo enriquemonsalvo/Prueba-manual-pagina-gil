@@ -1,5 +1,8 @@
 # Manual de Editor página web GIL
 
+![Banner GIL Negro](/GIL%20BANNER%20NEGRO.png)
+
+
 Este manual está diseñado para facilitar el proceso de edición y mantenimiento de un sitio web WordPress y una página estática en un entorno de desarrollo local utilizando el plugin Simply Static. Este manual está destinado a ser utilizado en un entorno basado en Linux.
 
 Antes de realizar cualquier cambio en WordPress, es fundamental realizar copias de seguridad tanto del sitio web como de la base de datos.
@@ -32,17 +35,27 @@ ls -lah
 tar -cvf /ruta/del/archivo/wp_modFECHA.tar.gz www
 ```
 
+![sudo su](sudo-su-2.png)
+
+
 ## II. Hacer Respaldo de Base de Datos:
 
 ```
-mysqldump -uUNAM_GILL -p BASEDEDATOS > nombredelacopiadeseguridad.sql
+mysqldump -uUSUARIO_BASEDEDATOS -p BASEDEDATOS > nombredelacopiadeseguridad.sql
 ```
 
 Ingrese la contraseña cuando se solicite.
+Para esta versión tanto la contraseña como el usuario es UNAM_GILL
+
+```
+UNAM_GILL
+```
 
 ## III. Crear Página Estática
 
 Una vez realizados los cambios y respaldados, utilice el plugin Simply Static en el editor de WordPress en localhost para generar una página estática. Puede seguir el siguiente tutorial: [Convert WordPress Websites into Static Sites with Simply Static](https://www.youtube.com/watch?v=a4xG14NsQUI)
+
+[![Simply Static](yt-simplystatic-image.jpg)](https://www.youtube.com/watch?v=a4xG14NsQUI)
 
 1. Descomprima el archivo zip de Simply Static y déle el formato adecuado ss_modFECHA.tar.gz.
 
@@ -60,6 +73,9 @@ mv www/html www/
 ```
 
 4. Asegúrese de que todos los archivos estén dentro de la carpeta 'www'.
+
+![www-html](www-html.png)
+
 
 ## IV. Montar Página Web Estática
 
@@ -87,6 +103,8 @@ tar -xvf ss_modFECHA.tar.gz
 rm -r ss_modFECHA.tar.gz
 ```
 
+![Inicio GIL](inicio-gil.png)
+
 ## V. Verificación y Restauración
 
 Después de montar la página estática, verifique su funcionamiento en localhost. En esta versión, no se tiene acceso al editor de WordPress. Si es necesario realizar cambios, debe restaurar la versión anterior de WordPress.
@@ -95,28 +113,28 @@ Después de montar la página estática, verifique su funcionamiento en localhos
 
     Para restaurar una versión anterior de WordPress, siga estos pasos:
 
-    - Ubique el archivo tar.gz correspondiente a la versión que desea restaurar (por ejemplo, 'wp_modFECHA.tar.gz').
+   Ubique el archivo tar.gz correspondiente a la versión que desea restaurar (por ejemplo, 'wp_modFECHA.tar.gz').
 
-    - Borre la carpeta 'www' actual:
+   Borre la carpeta 'www' actual:
 
     ```
     rm -r www
     ```
 
-    - Copie el archivo tar.gz al directorio actual y verifique su presencia:
+2. Copie el archivo tar.gz al directorio actual y verifique su presencia:
 
     ```
     cp ruta/del/archivo/wp_modFECHA.tar.gz .
     ls -lah
     ```
 
-    - Descomprima el archivo tar.gz:
+3. Descomprima el archivo tar.gz:
 
     ```
     tar -xvf wp_modFECHA.tar.gz
     ```
 
-    - Asegúrese de que los permisos sean correctos:
+4. Asegúrese de que los permisos sean correctos:
 
     ```
     chown -R www-data:www-data www
@@ -124,7 +142,7 @@ Después de montar la página estática, verifique su funcionamiento en localhos
 
 ### Notas
 
-- Formato para archivos tar:
+Formato para archivos tar:
   - Para WordPress: 'wp_modFECHA.tar.gz'
   - Para Estática: 'ss_modFECHA.tar.gz'
   - Para bases de datos de WordPress: 'wp_db_modFECHA.sql'
